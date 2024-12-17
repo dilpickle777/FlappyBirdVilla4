@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SocialPlatforms.Impl;
 
-public class GameController : MonoBehaviour
+public class GameController : MonoBehaviour 
 {
     public static GameController instance;
     public GameObject gameOverText;
@@ -20,9 +20,8 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         if (instance == null)
-        {
             instance = this;
-        }
+
         else if (instance != this)
         {
             Destroy(gameObject);
